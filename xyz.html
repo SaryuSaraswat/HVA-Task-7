@@ -126,20 +126,7 @@
     let turnO = true; //playerX, playerO
     let count = 0; //To Track Draw
 
-    
-    const disableBoxes = () => {
-      for (let box of boxes) {
-        box.disabled = true;
-      }
-    };
-
-    const enableBoxes = () => {
-      for (let box of boxes) {
-        box.disabled = false;
-        box.innerText = "";
-      }
-    };
-
+ 
     
     const winPatterns = [
       [0, 1, 2],
@@ -186,6 +173,20 @@
             return true;
           }
         }
+      }
+    };
+
+       
+    const disableBoxes = () => {
+      for (let box of boxes) {
+        box.disabled = true;
+      }
+    };
+
+    const enableBoxes = () => {
+      for (let box of boxes) {
+        box.disabled = false;
+        box.innerText = "";
       }
     };
 
